@@ -44,3 +44,10 @@ environment = ExtResource("4_6y0xa")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 2, 5)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.41051, 2.62331, -0.888377)
+light_energy = 5.364
+shadow_enabled = true
+shadow_blur = 3.0
+omni_range = 20.808
