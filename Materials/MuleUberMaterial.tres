@@ -1,8 +1,0 @@
-[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://bne0w3dakg042"]
-
-[ext_resource type="Shader" path="res://Shaders/MuleUberShader.gdshader" id="1_ywxx6"]
-[ext_resource type="CompressedTexture3D" uid="uid://c1yfpvc24moh2" path="res://Textures/desert_lut.png" id="2_141dv"]
-
-[resource]
-shader = ExtResource("1_ywxx6")
-shader_parameter/lut = ExtResource("2_141dv")
