@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://tpoaethig7e0"
+path="res://.godot/imported/DownUpsampleBox.glsl-33eb558bd48dec8ceca48b57190327cc.res"
+
+[deps]
+
+source_file="res://MulePostProcessing/Shaders/DownUpsampleBox.glsl"
+dest_files=["res://.godot/imported/DownUpsampleBox.glsl-33eb558bd48dec8ceca48b57190327cc.res"]
+
+[params]
+

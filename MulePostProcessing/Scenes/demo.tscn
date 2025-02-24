@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dqsavlnhg7n3k"]
+[gd_scene load_steps=9 format=3 uid="uid://dqsavlnhg7n3k"]
 
 [ext_resource type="Material" uid="uid://bne0w3dakg042" path="res://MulePostProcessing/Materials/MuleUberMaterial.tres" id="1_tq0qm"]
 [ext_resource type="Material" uid="uid://ldh3aluh3j4s" path="res://MulePostProcessing/Materials/RobotMaterial.tres" id="1_umepy"]
 [ext_resource type="Material" uid="uid://cy0pqckqms68v" path="res://MulePostProcessing/Materials/OrangeEmissive.tres" id="1_wustd"]
 [ext_resource type="Script" path="res://MulePostProcessing/Scripts/MulePostProcessing.cs" id="2_j2ypw"]
+[ext_resource type="RDShaderFile" uid="uid://tpoaethig7e0" path="res://MulePostProcessing/Shaders/DownUpsampleBox.glsl" id="3_duol3"]
 [ext_resource type="Environment" uid="uid://b4etykcgv1kkv" path="res://MainEnvironment.tres" id="4_6y0xa"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_djmhb"]
@@ -31,6 +32,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_j2ypw")
 UberMaterial = ExtResource("1_tq0qm")
+ComputeShader = ExtResource("3_duol3")
 
 [node name="Cube" type="MeshInstance3D" parent="."]
 material_override = ExtResource("1_wustd")
