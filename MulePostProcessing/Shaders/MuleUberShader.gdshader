@@ -1,5 +1,7 @@
 shader_type canvas_item;
 
+#include "blur_shader.gdshaderinc"
+
 uniform sampler3D lut;
 
 uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_nearest;
@@ -68,5 +70,6 @@ void fragment()
 	color.rgb = clamp(ACESFitted(color.rgb * 1.4) * 1.4, 0.0, 1.0);
 	color.rgb = apply_color_correction(color.rgb);
 
-	COLOR = color;
+	COLOR = gaussian_blur(blur_texture, SCREEN_UV, 10.0, 4.0);
+	//COLOR = color;
 }
